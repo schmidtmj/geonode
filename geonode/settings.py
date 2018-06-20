@@ -951,6 +951,16 @@ MAP_BASELAYERS = [{
     #     "group":"background"
     # },
 {
+"source": {
+           "ptype":"gxp_bingsource",
+           "apiKey": BING_API_KEY
+          },
+"group":"background",
+"name":"Aerial",
+"visibility": False,
+"fixed": True
+},
+{
     "source": {
          "ptype":"gxp_googlesource",
          "otherParams": "sensor=false&key={0}".format(GOOGLE_API_KEY)
