@@ -950,7 +950,17 @@ MAP_BASELAYERS = [{
     #     "fixed": True,
     #     "group":"background"
     # },
-    {
+{
+    "source": {
+         "ptype":"gxp_googlesource",
+         "otherParams": "sensor=false&key={0}".format(GOOGLE_API_KEY)
+        },
+    "group":"background",
+    "name":"ROADMAP",
+    "visibility": False,
+    "fixed": True
+},
+{
     "source": {"ptype": "gxp_osmsource"},
     "type": "OpenLayers.Layer.OSM",
     "name": "mapnik",
